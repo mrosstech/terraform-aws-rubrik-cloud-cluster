@@ -15,7 +15,7 @@ Here are some resources to get you started! If you find any challenges from this
 
 ```hcl
 module "rubrik_aws_cloud_cluster" {
-  source  = "rubrikinc/rubrik-cloud-cluster/aws"
+  source  = "github.com/mrosstech/terraform-aws-rubrik-cloud-cluster"
 
   aws_vpc_security_group_ids = ["sg-0fc82928bd323ed3qq"]
   aws_subnet_id              = "subnet-0278a40b29e52203a"
