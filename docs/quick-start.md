@@ -8,7 +8,7 @@ In your [Terraform configuration](https://learn.hashicorp.com/terraform/getting-
 
 ```hcl
 module "rubrik_aws_cloud_cluster" {
-  source  = "rubrikinc/rubrik-cloud-cluster/aws"
+  source  = "github.com/mrosstech/terraform-aws-rubrik-cloud-cluster"
 
   aws_vpc_security_group_ids = ["sg-0fc82928bd323ed3qq"]
   aws_subnet_id              = "subnet-0278a40b29e52203a"
@@ -48,7 +48,7 @@ This section outlines what is required to run the configuration defined above.
 
 ### Prerequisites
 
-* [Terraform](https://www.terraform.io/downloads.html) v0.10.3 or greater
+* [Terraform](https://www.terraform.io/downloads.html) v0.12.0 or greater
 * [Rubrik Provider for Terraform](https://github.com/rubrikinc/rubrik-provider-for-terraform) - provides Terraform functions for Rubrik
 
 ### Initialize the Directory
